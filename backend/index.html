@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h1>hello world</h1>
+    </body>
+    <script>
+        const url = "https://refactored-space-xylophone-7v5p9qwvx7v7c9pq-3333.app.github.dev"
+        fetch(url,{
+            method: "POST",
+            body: JSON.stringify({
+                name: "harish",
+                age:22,rollnumber: 456678
+            }),
+            Headers: {
+                'Content-Type':'application/json'
+            }
+        })
+        .then((response) => {
+            console.log(response)
+        })
+        
+    </script>
+
+</html>
